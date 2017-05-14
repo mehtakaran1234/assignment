@@ -1,0 +1,23 @@
+Steps :-
+
+Case 1: PRODSUP-001 :
+
+1) Setup the github and circleCI account.
+2) Create the repository in github account and fork the application from the client shared repository.
+3) connect circleCI and add projects from circleCI.
+4) Build application, perform test cases and check the results
+5) read circleCI documentation and configuration.
+6) check if circle.yml is available in client's application. Application runs without it, but to trigger the reports make it available.
+7) Application is failing to build while troubleshooting. Refactor the pom.xml and tried again.
+8) After adding below circle.yml and making necessary changes in pom.xml, Test results executed successfully in local environment.
+
+circle.yml 
+test:
+ post:
+   - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+   - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+
+gives no result
+
+10) commit and push the changes to git repository.
+11) CircleCI triggers automatically, check the Test result and report. Test cases show up Green on it.

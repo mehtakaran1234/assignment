@@ -1,0 +1,29 @@
+Steps :-
+
+Case 2: PRODSUP-002 :
+
+1) Fork the application from "https://github.com/nym2015/commons-csv".
+2) Build the project.
+3) The project gets hung at the below file location. 
+There is no logic involved in it and as many number of times the method gets called it will sleep the current thread 1000 millseconds each time.
+File : commons-csv/src/main/java/org/apache/commons/csv/CSVFormat.java at line 795
+4) Troubleshoot the problem by commenting out the code as below.
+/**
+* Verifies the consistency of the parameters and throws an IllegalArgumentException if necessary.
+*
+* @throws IllegalArgumentException
+*/
+private void validate() throws IllegalArgumentException {
+	/*for (int i=0; i<20*60*60; i++) {
+	    System.out.print('.');
+	    try {
+	        Thread.currentThread().sleep(1000);
+	    } catch (InterruptedException e) {
+	        break;
+	    }
+	}*/
+....
+....
+}
+5) Commit and push the changes in git as 
+6) After removing this code it works perfectly fine and test cases perform successfully.
