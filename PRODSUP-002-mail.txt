@@ -1,0 +1,49 @@
+Case 2: PRODSUP-002:
+
+Hi. I added my project to CircleCI but I can’t get the build complete. I’m not sure what I’m doing wrong.
+Can you help? My project is https://github.com/nym2015/commons-csv.
+
+---
+Jolene
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+Case 2 reply : 
+
+Hello Jolene,
+
+
+I have looked into your issue and need your suggestion on below piece of code.
+Could you please explain me what do you want to achieve with it?
+
+File : commons-csv/src/main/java/org/apache/commons/csv/CSVFormat.java at line 795
+
+/**
+* Verifies the consistency of the parameters and throws an IllegalArgumentException if necessary.
+*
+* @throws IllegalArgumentException
+*/
+private void validate() throws IllegalArgumentException {
+for (int i=0; i<20*60*60; i++) {
+    System.out.print('.');
+    try {
+        Thread.currentThread().sleep(1000);
+    } catch (InterruptedException e) {
+        break;
+    }
+}
+
+The program execution halts on this piece of code. 
+For troubleshooting, I have commented it and tried running test cases and it executed perfectly fine for me.
+Please and check and confirm if it works for you as well. 
+
+Also, If you do not change,code will still work but it will take very long duration to execute.
+
+Kindly let me know, if you have any queries regarding the same.
+
+--
+Thanks and Regards
+Mehta, Karan
+Customer Support Team

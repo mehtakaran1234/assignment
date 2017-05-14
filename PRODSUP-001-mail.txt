@@ -1,0 +1,69 @@
+Case 1: PRODSUP-001:
+
+Hi. I am trying to get my test cases to show up on CircleCI but it is not working. I have a fork of this project
+in my github account https://github.com/mtedone/podam. I added the project to CircleCI and got a green
+build but the Test Results tab is empty
+
+---
+Harry
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+Case 1 reply : 
+
+Hello Harry,
+
+I have checked your issue and please find below observations:
+1) The project is missing circle.yml, so you need to add circle.yml. I have forked your project and created circle.yml file into it. Please refer the link for my changes at https://github.com/mehtakaran1234/podam
+
+2) You need to Refactor 'pom.xml', which is in the root directory of your application.
+I have performed following two steps for troubleshooting.
+
+a) I have commented out the below configuration plugin from pom.xml.  
+
+<plugin>
+	<groupId>com.github.github</groupId>
+	<artifactId>site-maven-plugin</artifactId>
+	<version>0.12</version>
+	<configuration>
+		<message>Creating site for ${project.version}</message>
+	</configuration>
+	<executions>
+		<execution>
+			<goals>
+				<goal>site</goal>
+			</goals>
+			<phase>site</phase>
+		</execution>
+	</executions>
+</plugin>
+
+b) You need to enable 'Maven Surefire Plugin' in pom.xml file by commenting or removing out below code at line 329:
+
+<!-- 
+<configuration>
+   <skip>true</skip>
+</configuration>
+-->
+
+3) You need to add circle.yml file in the root directory of your application and add below lines in the file. This is the CircleCI configuration file which will read it each time it runs a build.
+
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+
+
+
+More information about CircleCI configuration is available at:
+https://circleci.com/docs/1.0/configuration/
+https://circleci.com/docs/1.0/
+
+Kindly let me know, if you have any queries regarding the same.
+
+--
+Thanks and Regards
+Mehta, Karan
+Customer Support Team
