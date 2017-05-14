@@ -11,3 +11,10 @@ Case 1: PRODSUP-001:
 + [Test Result] : https://circleci.com/gh/mehtakaran1234/podam/23
 + [Video File] : 
  
+
+Case 1: PRODSUP-002:
+-----------------------------------
++ [PRODSUP-002-mail.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-002-mail.txt
++ [PRODSUP-002-steps.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-002-steps.txt
++ [Test Result] : https://circleci.com/gh/mehtakaran1234/commons-csv/5
++ [Video File] : 
