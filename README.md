@@ -32,7 +32,7 @@ https://github.com/mehtakaran1234
 https://circleci.com/gh/mehtakaran1234
 
 
-in case of any question please contact:
+In case of any question please contact:
 -----------------------------------
 
 mehta.karan1234@gmail.com
