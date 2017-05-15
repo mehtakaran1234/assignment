@@ -9,7 +9,7 @@ Case 1: PRODSUP-001:
 + [PRODSUP-001-mail.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-001-mail.txt
 + [PRODSUP-001-steps.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-001-steps.txt
 + [Test Result] : https://circleci.com/gh/mehtakaran1234/podam/23
-+ [Video File] : 
++ [Video File] : https://github.com/mehtakaran1234/assignment/blob/master/assignment.avi
  
 
 Case 2: PRODSUP-002:
@@ -17,7 +17,7 @@ Case 2: PRODSUP-002:
 + [PRODSUP-002-mail.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-002-mail.txt
 + [PRODSUP-002-steps.txt] : https://github.com/mehtakaran1234/assignment/blob/master/PRODSUP-002-steps.txt
 + [Test Result] : https://circleci.com/gh/mehtakaran1234/commons-csv/5
-+ [Video File] : 
++ [Video File] : https://github.com/mehtakaran1234/assignment/blob/master/assignment.avi
 
 
 
