@@ -1,0 +1,56 @@
+Case 3: PRODSUP-003:
+
+Dear customer support,
+I need to explain how CircleCI works to my boss. I’ve read the docs but I still don’t get it. Can you please
+explain to me, in your own words, how CircleCI works? Also, it seems like you don’t support .NET builds.
+Why is that?
+
+--
+Adam
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+Case 3 reply : 
+
+Hello Adam,
+
+CircleCI is a platform which helps to deliver the code with better quality and in an efficient way. It is platform for both Continuous Integration and Continuous Deployment.
+
+1) Continuous Integration : With CircleCI, we can automatically test(Unit Tests, Integration Tests, Functional Tests) all the changes which are available to our code base. 
+2) Continuous Deployment : If our tests pass, then we can deploy our code to development, staging, production, or other environments. However it depends on the infrastructure we are deploying to. 
+Some examples are 
+
+AWS CodeDeploy
+AWS EC2 Container Service (ECS)
+AWS S3
+Google Container Engine (GKE)
+Heroku
+Deploy Using SSH
+
+
+CircleCI’s Role: CircleCI integrates with your version control system (GitHub/Bitbucket) and automatically runs a configured series of steps every time a change is detected in the project. We can also configure automatic deployment after the test cases executed successfully.
+It supports most popular mobile platforms
+i) Android 
+ii) IOS 
+and 8 web technologies  i.e
+i) Go(Golang)
+ii) Haskell
+iii) Java
+iv) Node.js
+v) PHP
+vi) Python
+vii) Ruby / Scala
+viii) Scala
+
+It do not officially support .NET technology. Some users have had luck with the "mono framework" or "docker" which can install via circle.yml
+.NET is a Windows technology, and CircleCi is running on Linux machines.
+
+
+You can find in detail information about CircleCI on the site https://circleci.com/docs
+
+--
+Thanks and Regards
+Mehta, Karan
+Customer Support Team
