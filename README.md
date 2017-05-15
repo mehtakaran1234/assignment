@@ -37,5 +37,4 @@ https://circleci.com/gh/mehtakaran1234
 in case of any question please contact:
 -----------------------------------
 
-in case of any question please contact:
-mehta.karan1234@gmail.com
+[ml]:mehta.karan1234@gmail.com
